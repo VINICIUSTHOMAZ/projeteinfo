@@ -1,0 +1,60 @@
+.sectionDownloads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  min-height: 90vh;
+}
+
+.sectionDownloads h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 20px 0px;
+  color: #fff;
+}
+
+.gridBtns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 50px 0px;
+  min-height: 70vh;
+  align-content: center;
+}
+
+.gridBtns a {
+  background: #FFCC00;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 300px;
+  height: 39px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 30px;
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+
+.gridBtns a:hover {
+  color: #005AA1;
+}
+
+@media only screen and (max-width: 680px) {
+  .gridBtns {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .gridBtns a {
+    width: 70vw;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .gridBtns a {
+    width: 80vw;
+  }
+}
