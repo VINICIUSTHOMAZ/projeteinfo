@@ -19,13 +19,25 @@
     <div class="background">
         <header>
             <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
                 <a href="/index.html"><img src="./resources/images/Logo.png" alt=""></a>
-                <ul>
-                    <li><a href="sobre_nos.html">SOBRE NÓS</a></li>
-                    <li><a href="cursos.html">CURSOS PROJETE</a></li>
-                    <li><a href="consulte_certificado.html">SEU CERTIFICADO</a></li>
-                    <li><a href="downloads.html">DOWNLOADS</a></li>
-                    <li><a href="#footer">CONTATO</a></li>
+                <ul id="menu-ul">
+                    <li id="closeLi">
+                        <label for="check2" class="checkbtn2"
+                            onclick="document.getElementById('check').checked = false">
+                            <i class="fas fa-times"></i>
+                        </label>
+                    </li>
+                    <li id="hiddenHomepage"><a href="index.html">INÍCIO</a></li>
+                    <li><a class="nav_link" href="sobre_nos.html">SOBRE NÓS</a></li>
+                    <li><a class="nav_link" href="cursos.html">CURSOS PROJETE</a></li>
+                    <li><a class="nav_link" href="consulte_certificado.html">SEU CERTIFICADO</a></li>
+                    <li><a class="nav_link" href="downloads.html">DOWNLOADS</a></li>
+                    <li><a class="nav_link" href="#footer"
+                            onclick="document.getElementById('check').checked = false">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
@@ -78,13 +90,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div>
+            <div class="div1">
                 <img src="./resources/images/10yearsImg.png" alt="">
             </div>
-            <div>
+            <div class="div2">
                 <img src="./resources/images/Logo.png" alt="">
             </div>
-            <div>
+            <div class="div3">
                 <ul>
                     <li><a href="https://api.whatsapp.com/send/?phone=553496978442&text&app_absent=0" target="_blank">
                             <img src="./resources/images/WhatsappIcon.svg" alt=""></a></li>
