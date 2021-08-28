@@ -72,3 +72,62 @@ main {
 .divRight {
     text-align: right;
 }
+
+@media only screen and (max-width: 850px) {
+    .section1Sobre {
+        flex-direction: column;
+    }
+    .section1SobreRight {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .section1SobreLeft img {
+        position: absolute;
+        top: 100px;
+        left: 35%;
+        width: 300px;
+        opacity: 0.8;
+    }
+    .section1SobreRight {
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section1SobreLeft img {
+        left: 25vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .section1SobreLeft img {
+        left: 15vw;
+    }
+    .parceirosContainer img {
+        width: 300px;
+    }
+    .divLeft {
+        text-align: center;
+    }
+    .divCenter {
+        text-align: center;
+    }
+    .divRight {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .section1SobreLeft img {
+        left: 10vw;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .section1SobreLeft img {
+        left: 3vw;
+    }
+    .parceirosContainer img {
+        width: 200px;
+    }
+}
