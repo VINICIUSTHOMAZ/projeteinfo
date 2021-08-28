@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./resources/images/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -55,16 +56,18 @@
             </section>
             <section class="section2">
                 <!-- <img src="./resources/images/NovidadesTitle.png" alt=""> -->
-                <h6 class="h6ClasseTest">
+                <h1>Fiquem ligados em nossas redes sociais</h1>
+                <!-- <h6 class="h6ClasseTest">
                     Fiquem ligados em nossas redes sociais,
                     novos cursos estão por vir, novas turmas,
                     e muito mais!
-                </h6>
+                </h6> -->
+                <div id="instafeed"></div>
                 <!-- <img src="./resources/images/PromocoesTitle.png" alt=""> -->
-                <h6>
+                <!-- <h6>
                     Já pensou em ganhar um super desconto? <br />
                     Chame um amigo e consulte as condições!
-                </h6>
+                </h6> -->
             </section>
         </main>
     </div>
@@ -120,6 +123,22 @@
             <p id="footerText2">DESENVOLVIDO POR LUCAS GERHARDT E VINÍCIUS TOMAZ</p>
         </div>
     </footer>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            accessToken: 'IGQVJWVk4yZAlZA0OVV4eTlGQU5lc2ZApRy05RjRJV0JrUDJhazhUcFpBSnM4dGVDUng4V01aX0RYeDFlTTY0c1RXOXJDQ1hLR2h0dXhYN0R1eTN2UkhILVhMLTdGZADZAmM2ZAIWkpoS2lrWUVjREsyM1Y0bwZDZD',
+            limit: 6,
+            template: '<div class="card" style="background-image:url({{image}})">' +
+                '<a href="{{link}}" target="_blank">' +
+                '<div class="overlay"> </div>' +
+                '<div class="info">' +
+                '<h1>projete_informatica</h1>' +
+                '<p>{{caption}}</p>' +
+                '</div>' +
+                '</a>' +
+                '</div>',
+        });
+        feed.run();
+    </script>
 </body>
 
 </html>
